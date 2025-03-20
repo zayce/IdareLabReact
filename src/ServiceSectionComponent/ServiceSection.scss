@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "GillSans";
+  src: url(../fonts/GillSans.ttf) format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "Coolvetica";
+  src: url(../fonts/coolvetica.ttf) format("truetype"); /* Safari, Android, iOS */
+}
+
+.IdareLab-services-section-wrapper {
+  margin-bottom: 180px;
+  .IdareLab-services-section-inner {
+    width: 980px;
+    margin: 0 auto;
+    .IdareLab-services-section-Title {
+      text-align: center;
+      margin-bottom: 200px;
+      .IdareLab-services-section-Title-Logo {
+        margin-bottom: 70px;
+      }
+      .IdareLab-services-section-title {
+        font-family: Coolvetica;
+        font-weight: 400;
+        font-size: 60px;
+      }
+    }
+    .IdareLab-services-section {
+      display: grid;
+      grid-template-columns: repeat(2, 480px);
+      gap: 20px;
+      .Block {
+        font-family: Coolvetica;
+        font-weight: 400;
+        font-size: 64px;
+        text-transform: uppercase;
+      }
+      .Smm {
+        background-color: rgba(25, 9, 74, 1);
+        color: white;
+        padding: 316px 141px 48px 48px;
+      }
+      .web {
+        background-color: rgba(202, 85, 85, 1);
+        color: black;
+        padding: 316px 88px 48px 48px;
+      }
+      .IdareLab-services-section-column {
+        display: grid;
+        grid-template-columns: repeat(3, 314px);
+        gap: 20px;
+
+        .Blocks {
+          font-family: Coolvetica;
+          font-weight: 400;
+          font-size: 48px;
+          text-transform: uppercase;
+        }
+        .Brand {
+          background-color: rgba(246, 158, 99, 1);
+          padding: 146px 95px 36px 36px;
+        }
+        .Create {
+          background-color: black;
+          color: white;
+          padding: 146px 51px 36px 36px;
+        }
+        .individual {
+          background-color: rgba(116, 136, 193, 1);
+          color: white;
+          padding: 146px 55px 36px 36px;
+        }
+      }
+    }
+  }
+}
