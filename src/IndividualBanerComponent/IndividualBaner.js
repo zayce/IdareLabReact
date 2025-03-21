@@ -1,123 +1,126 @@
+import { useMyContext } from "../UseContext";
 import "./IndividualBaner.scss";
 
 export const IndividualBaner = () => {
+  const { translations, language } = useMyContext();
   return (
     <>
-      <div class="Idarelab-Individual-Baner-Wrapper">
-        <div class="Idarelab-Individual-Baner-Inner">
-          <div class="Idarelab-Individual-Baner-Title">
-            <div class="Idarelab-Individual-Baner-Title-Name">
-              Individual service options
+      <div className="Idarelab-Individual-Baner-Wrapper">
+        <div className="Idarelab-Individual-Baner-Inner">
+          <div className="Idarelab-Individual-Baner-Title">
+            <div className="Idarelab-Individual-Baner-Title-Name">
+              {translations[language].individualServiceOptions}
             </div>
-            <div class="Idarelab-Individual-Baner-Title-desc">
-              We offer customized services tailored to your specific needs. Our
-              individual options include a range of creative and marketing
-              solutions to help you achieve your goals effectively:
+            <div className="Idarelab-Individual-Baner-Title-desc">
+              {translations[language].WeOfferCustomized}
             </div>
           </div>
-          <div class="Idarelab-Individual-Baner-Service-Objects">
-            <div class="Idarelab-Individual-Baner-Service-Object">
-              <div class="Idarelab-Individual-Baner-Service-Object-Title">
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Name">
-                  Reels
+          <div className="Idarelab-Individual-Baner-Service-Objects">
+            <div className="Idarelab-Individual-Baner-Service-Object">
+              <div className="Idarelab-Individual-Baner-Service-Object-Title">
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Name">
+                  {translations[language].Reels}
                 </div>
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Desc">
-                  Engaging short videos for social medias
-                </div>
-              </div>
-              <div class="Idarelab-Individual-Baner-Service-Object-Time">
-                1-2 days
-              </div>
-            </div>
-            <div class="Idarelab-Individual-Baner-Service-Object">
-              <div class="Idarelab-Individual-Baner-Service-Object-Title">
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Name">
-                  Graphic Poster
-                </div>
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Desc">
-                  High-quality visual designs for events or promotions
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Desc">
+                  {translations[language].EngagingShortVideosForSocialMedia}
                 </div>
               </div>
-              <div class="Idarelab-Individual-Baner-Service-Object-Time">
-                1 days
+              <div className="Idarelab-Individual-Baner-Service-Object-Time">
+                1-2 {translations[language].days}
               </div>
             </div>
-            <div class="Idarelab-Individual-Baner-Service-Object">
-              <div class="Idarelab-Individual-Baner-Service-Object-Title">
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Name">
-                  Motion Poster
+            <div className="Idarelab-Individual-Baner-Service-Object">
+              <div className="Idarelab-Individual-Baner-Service-Object-Title">
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Name">
+                  {translations[language].GraphicPosters}
                 </div>
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Desc">
-                  Animated posters that capture attention
-                </div>
-              </div>
-              <div class="Idarelab-Individual-Baner-Service-Object-Time">
-                1-2 days
-              </div>
-            </div>
-            <div class="Idarelab-Individual-Baner-Service-Object">
-              <div class="Idarelab-Individual-Baner-Service-Object-Title">
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Name">
-                  Video Editing
-                </div>
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Desc">
-                  Professional editing to enhance your footage
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Desc">
+                  {translations[language].HighQuality}
                 </div>
               </div>
-              <div class="Idarelab-Individual-Baner-Service-Object-Time">
-                2-3 days
+              <div className="Idarelab-Individual-Baner-Service-Object-Time">
+                1 {translations[language].days}
               </div>
             </div>
-            <div class="Idarelab-Individual-Baner-Service-Object">
-              <div class="Idarelab-Individual-Baner-Service-Object-Title">
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Name">
-                  Professional Camera Shooting
+            <div className="Idarelab-Individual-Baner-Service-Object">
+              <div className="Idarelab-Individual-Baner-Service-Object-Title">
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Name">
+                  {translations[language].MotionPosts}
                 </div>
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Desc">
-                  High-quality video/photo shooting with expert equipment
-                </div>
-              </div>
-              <div class="Idarelab-Individual-Baner-Service-Object-Time">
-                1 days
-              </div>
-            </div>
-            <div class="Idarelab-Individual-Baner-Service-Object">
-              <div class="Idarelab-Individual-Baner-Service-Object-Title">
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Name">
-                  Targeted Ad Setup
-                </div>
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Desc">
-                  Effective ad campaigns to reach your audience
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Desc">
+                  {translations[language].AnimatedPostersThaCaptureAttention}
                 </div>
               </div>
-              <div class="Idarelab-Individual-Baner-Service-Object-Time">
-                1 days
+              <div className="Idarelab-Individual-Baner-Service-Object-Time">
+                1-2 {translations[language].days}
               </div>
             </div>
-            <div class="Idarelab-Individual-Baner-Service-Object">
-              <div class="Idarelab-Individual-Baner-Service-Object-Title">
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Name">
-                  Presentation Creation
+            <div className="Idarelab-Individual-Baner-Service-Object">
+              <div className="Idarelab-Individual-Baner-Service-Object-Title">
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Name">
+                  {translations[language].VideoEditing}
                 </div>
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Desc">
-                  Visually appealing and impactful presentations
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Desc">
+                  {
+                    translations[language]
+                      .ProfessionalEditingToEnhanceYourFootage
+                  }
                 </div>
               </div>
-              <div class="Idarelab-Individual-Baner-Service-Object-Time">
-                3-4 days
+              <div className="Idarelab-Individual-Baner-Service-Object-Time">
+                2-3 {translations[language].days}
               </div>
             </div>
-            <div class="Idarelab-Individual-Baner-Service-Object">
-              <div class="Idarelab-Individual-Baner-Service-Object-Title">
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Name">
-                  SMM
+            <div className="Idarelab-Individual-Baner-Service-Object">
+              <div className="Idarelab-Individual-Baner-Service-Object-Title">
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Name">
+                  {translations[language].ProfessionalCameraShooting}
                 </div>
-                <div class="Idarelab-Individual-Baner-Service-Object-Title-Desc">
-                  Comprehensive social media account management
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Desc">
+                  {translations[language].HighQualityVideoPhoto}
                 </div>
               </div>
-              <div class="Idarelab-Individual-Baner-Service-Object-Time">
-                monthly
+              <div className="Idarelab-Individual-Baner-Service-Object-Time">
+                1 {translations[language].days}
+              </div>
+            </div>
+            <div className="Idarelab-Individual-Baner-Service-Object">
+              <div className="Idarelab-Individual-Baner-Service-Object-Title">
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Name">
+                  {translations[language].TargetedAdSetup}
+                </div>
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Desc">
+                  {translations[language].Effective}
+                </div>
+              </div>
+              <div className="Idarelab-Individual-Baner-Service-Object-Time">
+                1 {translations[language].days}
+              </div>
+            </div>
+            <div className="Idarelab-Individual-Baner-Service-Object">
+              <div className="Idarelab-Individual-Baner-Service-Object-Title">
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Name">
+                  {translations[language].PresentationCreation}
+                </div>
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Desc">
+                  {translations[language].VisuallyAppealing}
+                </div>
+              </div>
+              <div className="Idarelab-Individual-Baner-Service-Object-Time">
+                3-4 {translations[language].days}
+              </div>
+            </div>
+            <div className="Idarelab-Individual-Baner-Service-Object">
+              <div className="Idarelab-Individual-Baner-Service-Object-Title">
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Name">
+                  {translations[language].SMM}
+                </div>
+                <div className="Idarelab-Individual-Baner-Service-Object-Title-Desc">
+                  {translations[language].ComprehensiveSocial}
+                </div>
+              </div>
+              <div className="Idarelab-Individual-Baner-Service-Object-Time">
+                {translations[language].monthly}
               </div>
             </div>
           </div>
