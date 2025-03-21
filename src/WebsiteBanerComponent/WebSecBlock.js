@@ -30,8 +30,7 @@ export const WebSecBlock = () => {
                 {translations[language].DraftingABrief}
               </div>
               <div class="Idarelab-Website-section-Block-Opis">
-                Defining project goals, target audience, and key requirements
-                for the website.
+                {translations[language].DefiningProjectGoals}
               </div>
               <div class="Idarelab-Website-section-Block-Number">
                 <img src={One} />
@@ -39,10 +38,10 @@ export const WebSecBlock = () => {
             </div>
             <div class="Idarelab-Website-section-Block-red">
               <div class="Idarelab-Website-section-Block-Title">
-                Marketing analysis and prototyping
+                {translations[language].MarketingAnalysisAndPrototyping}
               </div>
               <div class="Idarelab-Website-section-Block-Opis">
-                Analyzing the market and designing a website prototype.
+                {translations[language].AnalyzingTheMarket}
               </div>
               <div class="Idarelab-Website-section-Block-Number">
                 <img src={two} />
@@ -50,10 +49,10 @@ export const WebSecBlock = () => {
             </div>
             <div class="Idarelab-Website-section-Block-orange">
               <div class="Idarelab-Website-section-Block-Title">
-                Website design
+                {translations[language].WebsiteDesign}
               </div>
               <div class="Idarelab-Website-section-Block-Opis">
-                Creating the website's visual design.
+                {translations[language].WebsiteLayoutAndDevelopment}
               </div>
               <div class="Idarelab-Website-section-Block-Number">
                 <img src={three} />
@@ -61,10 +60,10 @@ export const WebSecBlock = () => {
             </div>
             <div class="Idarelab-Website-section-Block-purple">
               <div class="Idarelab-Website-section-Block-Title">
-                Website layout and development.
+                {translations[language].WebsiteLayoutAndDevelopment}
               </div>
               <div class="Idarelab-Website-section-Block-Opis">
-                Coding and building the website's functionality.
+                {translations[language].CodingAndBuilding}
               </div>
               <div class="Idarelab-Website-section-Block-Number">
                 <img src={four} />
@@ -72,10 +71,10 @@ export const WebSecBlock = () => {
             </div>
             <div class="Idarelab-Website-section-Block-black">
               <div class="Idarelab-Website-section-Block-Title">
-                Launch of the website
+                {translations[language].LaunchOfTheWebsite}
               </div>
               <div class="Idarelab-Website-section-Block-Opis">
-                Making the website live and ready for users.
+                {translations[language].MakingTheWebsite}
               </div>
               <div class="Idarelab-Website-section-Block-Number">
                 <img src={five} />
