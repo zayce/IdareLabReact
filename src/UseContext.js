@@ -118,10 +118,12 @@ export const MyProvider = ({ children }) => {
       ToHelp:
         "To help businesses grow online by providing modern and effective marketing solutions.",
       OurValues: "Our Values:",
-      OurValues1: "Quality:Every detail is carefully crafted.",
-      OurValues2: "Client Focus: We prioritize each client's goals and needs.",
-      OurValues3:
-        "Results-Oriented: We focus on delivering measurable outcomes.",
+      OurValues1: "Quality:",
+      OurValues4: "Every detail is carefully crafted.",
+      OurValues2: "Client Focus:",
+      OurValues5: " We prioritize each client`s goals and needs.",
+      OurValues3: "Results-Oriented:",
+      OurValues6: " We focus on delivering measurable outcomes.",
       WhatWeDo: "What We Do:",
       BrandCreationAndDevelopment: "Brand creation and development.",
       SocialMediaManagement: "Social media management.",
@@ -246,7 +248,7 @@ export const MyProvider = ({ children }) => {
       VideoEditing: "Видеомонтаж",
       ProfessionalEditingToEnhanceYourFootage:
         "Профессиональное редактирование для улучшения вашего материала",
-      ProfessionalCameraShooting: "Профессиональная съемка на камеру",
+      ProfessionalCameraShooting: "Профессио-нальная съемка на камеру",
       HighQualityVideoPhoto:
         "Качественная видео/фотосъемка с использованием профессионального оборудования",
       TargetedAdSetup: "Настройка целевой рекламы",
@@ -267,11 +269,12 @@ export const MyProvider = ({ children }) => {
       ToHelp:
         "Помогать бизнесу развиваться в Интернете, предоставляя современные и эффективные маркетинговые решения.",
       OurValues: "Наши ценности:",
-      OurValues1: "Качество: Каждая деталь тщательно продумана.",
-      OurValues2:
-        "Ориентация на клиента: мы отдаем приоритет целям и потребностям каждого клиента.",
-      OurValues3:
-        "Ориентация на результат: мы фокусируемся на достижении измеримых результатов.",
+      OurValues1: "Качество:",
+      OurValues4: " Каждая деталь тщательно продумана.",
+      OurValues2: "Ориентация на клиента:",
+      OurValues5: " мы отдаем приоритет целям и потребностям каждого клиента.",
+      OurValues3: "Ориентация на результат:",
+      OurValues6: " мы фокусируемся на достижении измеримых результатов.",
       WhatWeDo: "Что мы делаем:",
       BrandCreationAndDevelopment: "Создание и развитие бренда.",
       SocialMediaManagement: "Управление социальными сетями.",
@@ -416,11 +419,14 @@ export const MyProvider = ({ children }) => {
       ToHelp:
         "Müasir və effektiv marketinq həlləri təqdim etməklə bizneslərin onlayn böyüməsinə kömək etmək.",
       OurValues: "Dəyərlərimiz:",
-      OurValues1: "Keyfiyyət: Hər bir detal diqqətlə işlənib.",
-      OurValues2:
-        "Müştəri Focus: Biz hər bir müştərinin məqsəd və ehtiyaclarını prioritetləşdiririk.",
-      OurValues3:
-        "Nəticə yönümlü: Biz ölçülə bilən nəticələrin çatdırılmasına diqqət yetiririk.",
+      OurValues1: "Keyfiyyət:",
+      OurValues2: "Müştəri Focus:",
+      OurValues5:
+        " Biz hər bir müştərinin məqsəd və ehtiyaclarını prioritetləşdiririk.",
+      OurValues4: " Hər bir detal diqqətlə işlənib.",
+      OurValues3: "Nəticə yönümlü:",
+      OurValues6:
+        " Biz ölçülə bilən nəticələrin çatdırılmasına diqqət yetiririk.",
       WhatWeDo: "Biz nə edirik:",
       BrandCreationAndDevelopment: "Brendin yaradılması və inkişafı.",
       SocialMediaManagement: "Sosial media menecmenti.",
@@ -456,7 +462,6 @@ export const MyProvider = ({ children }) => {
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
   };
-
 
   return (
     <MyContext.Provider
