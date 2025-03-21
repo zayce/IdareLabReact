@@ -6,8 +6,10 @@ import three from "./WebAsessts/03.png";
 import four from "./WebAsessts/04.png";
 import five from "./WebAsessts/05.png";
 import Time from "./WebAsessts/timeline.png";
+import { useMyContext } from "../UseContext";
 
 export const WebSecBlock = () => {
+  const { translations, language } = useMyContext();
   return (
     <>
       <div class="Idarelab-Website-section-wrapper">
@@ -25,7 +27,7 @@ export const WebSecBlock = () => {
           <div class="Idarelab-Website-section-Blocks">
             <div class="Idarelab-Website-section-Block">
               <div class="Idarelab-Website-section-Block-Title">
-                Drafting a brief
+                {translations[language].DraftingABrief}
               </div>
               <div class="Idarelab-Website-section-Block-Opis">
                 Defining project goals, target audience, and key requirements
@@ -70,10 +72,10 @@ export const WebSecBlock = () => {
             </div>
             <div class="Idarelab-Website-section-Block-black">
               <div class="Idarelab-Website-section-Block-Title">
-              Launch of the website
+                Launch of the website
               </div>
               <div class="Idarelab-Website-section-Block-Opis">
-              Making the website live and ready for users.
+                Making the website live and ready for users.
               </div>
               <div class="Idarelab-Website-section-Block-Number">
                 <img src={five} />
