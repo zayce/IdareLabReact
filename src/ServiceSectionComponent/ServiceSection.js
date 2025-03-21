@@ -7,23 +7,34 @@ export const ServiceSection = () => {
   const { translations, language } = useMyContext();
   return (
     <>
-      <div class="IdareLab-services-section-wrapper">
-        <div class="IdareLab-services-section-inner">
-          <div class="IdareLab-services-section-Title">
-            <div class="IdareLab-services-section-Title-Logo">
+      <div className="IdareLab-services-section-wrapper">
+        <div className="IdareLab-services-section-inner">
+          <div className="IdareLab-services-section-Title">
+            <div className="IdareLab-services-section-Title-Logo">
               <img src={Ribicon} />
             </div>
-            <div class="IdareLab-services-section-title">
+            <div className="IdareLab-services-section-title">
               {translations[language].FromIdeaToVisual}
             </div>
           </div>
-          <div class="IdareLab-services-section">
-            <div class="Block Smm">{translations[language].SMMPackages}</div>
-            <div class="Block web">{translations[language].WebsiteDeveloping}</div>
-            <div class="IdareLab-services-section-column">
-              <div class="Blocks Brand">{translations[language].BrandIdentityDesign}</div>
-              <div class="Blocks Create">{translations[language].CreatingMaterials}</div>
-              <div class="Blocks individual"> {translations[language].individualServiceOptions}</div>
+          <div className="IdareLab-services-section">
+            <div className="Block Smm">
+              {translations[language].SMMPackages}
+            </div>
+            <div className="Block web">
+              {translations[language].WebsiteDeveloping}
+            </div>
+            <div className="IdareLab-services-section-column">
+              <div className="Blocks Brand">
+                {translations[language].BrandIdentityDesign}
+              </div>
+              <div className="Blocks Create">
+                {translations[language].CreatingMaterials}
+              </div>
+              <div className="Blocks individual">
+                {" "}
+                {translations[language].individualServiceOptions}
+              </div>
             </div>
           </div>
         </div>

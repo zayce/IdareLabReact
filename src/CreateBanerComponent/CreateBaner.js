@@ -1,129 +1,125 @@
+import { useMyContext } from "../UseContext";
 import "./CreateBaner.scss";
 
 export const CreateBaner = () => {
+  const { translations, language } = useMyContext();
   return (
     <>
-      <div class="IdareLab-Create-Baner-Wrapper">
-        <div class="IdareLab-Create-Baner-Inner">
-          <div class="IdareLab-Create-Baner-Left-Sides">
-            <div class="IdareLab-Create-Baner-Left-Sides-Name">
-              Creating of print materials
+      <div className="IdareLab-Create-Baner-Wrapper">
+        <div className="IdareLab-Create-Baner-Inner">
+          <div className="IdareLab-Create-Baner-Left-Sides">
+            <div className="IdareLab-Create-Baner-Left-Sides-Name">
+              {translations[language].CreatingOfPrintMaterials}
             </div>
-            <div class="IdareLab-Create-Baner-Left-Sides-Comment">
-              We specialize in creating high-quality print materials tailored to
-              meet your business or personal needs. Our designs are visually
-              appealing, professional, and aligned with your brand identity,
-              ensuring effective communication with your target audience. From
-              concept to final print-ready files, we provide a full range of
-              print material solutions for marketing, events, or corporate
-              purposes.
+            <div className="IdareLab-Create-Baner-Left-Sides-Comment">
+              {translations[language].WeSpecialize}
             </div>
-            <div class="IdareLab-Create-Baner-Left-Sides-Comment">
-              Choose the print materials you need and contact us to get started!
+            <div className="IdareLab-Create-Baner-Left-Sides-Comment">
+              {translations[language].WeSpecializeText}
             </div>
-            <button class="IdareLab-Create-Baner-Left-Sides-Button">
-              <span class="IdareLab-Create-Baner-Left-Sides-Word">
-                Order a project
+            <button className="IdareLab-Create-Baner-Left-Sides-Button">
+              <span className="IdareLab-Create-Baner-Left-Sides-Word">
+                {translations[language].OrderAProject}
               </span>
             </button>
           </div>
-          <div class="IdareLab-Create-Baner-Right-Sides">
-            <div class="IdareLab-Create-Baner-Right-Sides-Column">
-              <ul class="IdareLab-Create-Baner-Right-Sides-Column-Items">
-                <li class="Bond">B</li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Banners
+          <div className="IdareLab-Create-Baner-Right-Sides">
+            <div className="IdareLab-Create-Baner-Right-Sides-Column">
+              <ul className="IdareLab-Create-Baner-Right-Sides-Column-Items">
+                <li className="Bond">{translations[language].B}</li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Banners}
                 </li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Billboards
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Billboards}
                 </li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Booklets
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Booklets}
                 </li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Brochures
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Brochures}
                 </li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Business Cards
-                </li>
-              </ul>
-              <ul class="IdareLab-Create-Baner-Right-Sides-Column-Items">
-                <li class="Bond">c</li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Calendars
-                </li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Catalogs
-                </li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Certificates
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].BusinessCards}
                 </li>
               </ul>
-              <ul class="IdareLab-Create-Baner-Right-Sides-Column-Items">
-                <li class="Bond">e</li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Envelopes
+              <ul className="IdareLab-Create-Baner-Right-Sides-Column-Items">
+                <li className="Bond">{translations[language].C}</li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Calendars}
                 </li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Event Tickets
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Catalogs}
                 </li>
-              </ul>
-            </div>
-            <div class="IdareLab-Create-Baner-Right-Sides-Column">
-              <ul class="IdareLab-Create-Baner-Right-Sides-Column-Items">
-                <li class="Bond">f</li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Flyers
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Certificates}
                 </li>
               </ul>
-              <ul class="IdareLab-Create-Baner-Right-Sides-Column-Items">
-                <li class="Bond">i</li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Invitations
+              <ul className="IdareLab-Create-Baner-Right-Sides-Column-Items">
+                <li className="Bond">{translations[language].E}</li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Envelopes}
                 </li>
-              </ul>
-              <ul class="IdareLab-Create-Baner-Right-Sides-Column-Items">
-                <li class="Bond">l</li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Labels
-                </li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Letterheads
-                </li>
-              </ul>
-              <ul class="IdareLab-Create-Baner-Right-Sides-Column-Items">
-                <li class="Bond">n</li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Notepads
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].EventTickets}
                 </li>
               </ul>
             </div>
-            <div class="IdareLab-Create-Baner-Right-Sides-Column">
-              <ul class="IdareLab-Create-Baner-Right-Sides-Column-Items">
-                <li class="Bond">p</li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Packaging Design
-                </li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Postcards
-                </li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Posters
+            <div className="IdareLab-Create-Baner-Right-Sides-Column">
+              <ul className="IdareLab-Create-Baner-Right-Sides-Column-Items">
+                <li className="Bond">{translations[language].F}</li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Flyers}
                 </li>
               </ul>
-              <ul class="IdareLab-Create-Baner-Right-Sides-Column-Items">
-                <li class="Bond">m</li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Magazines
-                </li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Menu
+              <ul className="IdareLab-Create-Baner-Right-Sides-Column-Items">
+                <li className="Bond">{translations[language].I}</li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Invitations}
                 </li>
               </ul>
-              <ul class="IdareLab-Create-Baner-Right-Sides-Column-Items">
-                <li class="Bond">s</li>
-                <li class="IdareLab-Create-Baner-Right-Sides-Column-Item">
-                  Stickers
+              <ul className="IdareLab-Create-Baner-Right-Sides-Column-Items">
+                <li className="Bond">{translations[language].L}</li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Labels}
+                </li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Letterheads}
+                </li>
+              </ul>
+              <ul className="IdareLab-Create-Baner-Right-Sides-Column-Items">
+                <li className="Bond">{translations[language].N}</li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Notepads}
+                </li>
+              </ul>
+            </div>
+            <div className="IdareLab-Create-Baner-Right-Sides-Column">
+              <ul className="IdareLab-Create-Baner-Right-Sides-Column-Items">
+                <li className="Bond">{translations[language].P}</li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].PackagingDesign}
+                </li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Postcards}
+                </li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Posters}
+                </li>
+              </ul>
+              <ul className="IdareLab-Create-Baner-Right-Sides-Column-Items">
+                <li className="Bond">{translations[language].M}</li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Magazines}
+                </li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Menu}
+                </li>
+              </ul>
+              <ul className="IdareLab-Create-Baner-Right-Sides-Column-Items">
+                <li className="Bond">{translations[language].S}</li>
+                <li className="IdareLab-Create-Baner-Right-Sides-Column-Item">
+                  {translations[language].Stickers}
                 </li>
               </ul>
             </div>
