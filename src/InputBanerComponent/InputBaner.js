@@ -1,36 +1,39 @@
+import { useMyContext } from "../UseContext";
 import "./InputBaner.scss";
 
 export const InputBaner = () => {
+  const { translations, language } = useMyContext();
   return (
     <>
-      <div class="IdareLab-Input-Baner-Wrapper">
-        <div class="Idarelab-Input-Baner-Inner">
-          <div class="IdareLab-Input-Baner-Title">
-            <div class="IdareLab-Input-Baner-Title-Name">
-              Do you have an idea? let’s discuss it!
+      <div className="IdareLab-Input-Baner-Wrapper">
+        <div className="Idarelab-Input-Baner-Inner">
+          <div className="IdareLab-Input-Baner-Title">
+            <div className="IdareLab-Input-Baner-Title-Name">
+              {translations[language].DoYouHaveIdea}
             </div>
-            <div class="IdareLab-Input-Baner-Title-Desc">
-              Leave us a request, and we’ll get back to you as soon as possible.
-              Together, we’ll bring your ideas to life!
+            <div className="IdareLab-Input-Baner-Title-Desc">
+              {translations[language].LeaveUsA}
             </div>
           </div>
-          <div class="IdareLab-Input-Baner-Rigth-Slide">
-            <div class="IdareLab-Input-Baner-Rigth-Slide-Input">
-              <input placeholder="Your name" class="Input" />
+          <div className="IdareLab-Input-Baner-Rigth-Slide">
+            <div className="IdareLab-Input-Baner-Rigth-Slide-Input">
+              <input placeholder="Your name" className="Input" />
             </div>
-            <div class="IdareLab-Input-Baner-Rigth-Slide-Input">
-              <input placeholder="Phone number" class="Input" />
+            <div className="IdareLab-Input-Baner-Rigth-Slide-Input">
+              <input placeholder="Phone number" className="Input" />
             </div>
-            <div class="IdareLab-Input-Baner-Rigth-Slide-Check">
-              <div class="IdareLab-Input-Baner-Check">
+            <div className="IdareLab-Input-Baner-Rigth-Slide-Check">
+              <div className="IdareLab-Input-Baner-Check">
                 <img src="Rectangle.png" />
               </div>
-              <div class="IdareLab-Input-Baner-Check-Opis">
-                I agree to the terms of personal data processing.
+              <div className="IdareLab-Input-Baner-Check-Opis">
+                {translations[language].IAgreeTo}
               </div>
             </div>
-            <button class="IdareLab-Input-Baner-Button">
-              <span class="IdareLab-Input-Baner-Button-Word">Send</span>
+            <button className="IdareLab-Input-Baner-Button">
+              <span className="IdareLab-Input-Baner-Button-Word">
+                {translations[language].Send}
+              </span>
             </button>
           </div>
         </div>
