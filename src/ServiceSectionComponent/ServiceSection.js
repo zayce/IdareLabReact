@@ -18,13 +18,15 @@ export const ServiceSection = () => {
             </div>
           </div>
           <div className="IdareLab-services-section">
-            <div className="Block Smm">
-              {translations[language].SMMPackages}
-            </div>
-            <div className="Block web">
-              {translations[language].WebsiteDeveloping}
-            </div>
             <div className="IdareLab-services-section-column">
+              <div className="Block Smm">
+                {translations[language].SMMPackages}
+              </div>
+              <div className="Block web">
+                {translations[language].WebsiteDeveloping}
+              </div>
+            </div>
+            <div className="IdareLab-services-section-columns">
               <div className="Blocks Brand">
                 {translations[language].BrandIdentityDesign}
               </div>

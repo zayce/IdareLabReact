@@ -24,6 +24,7 @@ export const AboutUs = () => {
             </div>
           </div>
           <div className="IdareLab-AboutUs-Baner-Objects">
+            
             <div className="IdareLab-AboutUs-Baner-Object">
               <div className="IdareLab-AboutUs-Baner-Object-Name">
                 {translations[language].WhoWeAre}
@@ -40,6 +41,7 @@ export const AboutUs = () => {
                 {translations[language].WeStay}
               </div>
             </div>
+
             <div className="IdareLab-AboutUs-Baner-Object">
               <div className="IdareLab-AboutUs-Baner-Object-Name">
                 {translations[language].OurGoal}
@@ -79,6 +81,7 @@ export const AboutUs = () => {
                 </li>
               </ul>
             </div>
+
             <div className="IdareLab-AboutUs-Baner-Object">
               <div className="IdareLab-AboutUs-Baner-Object-Name">
                 {translations[language].WhatWeDo}
@@ -114,6 +117,7 @@ export const AboutUs = () => {
                 {translations[language].WeAre}
               </div>
             </div>
+
           </div>
         </div>
       </div>
